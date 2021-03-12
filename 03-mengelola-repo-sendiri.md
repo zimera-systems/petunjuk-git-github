@@ -1,10 +1,10 @@
 # Mengelola Repo Sendiri
 
-[ [<< Kembali](README.md) ]
+[ [Kembali](README.md) ]
 
 Bagian ini merupakan seri tulisan tentang [Git](https://git-scm.com/). Silahkan ke [README.md](README.md) untuk memahami gambaran garis besar materi-materi yang dituliskan.
 
-Sebagai pengguna Git dan GitHub, kita bisa mempunyai *repository* (sering disingkat dengan *repo* saja) di GitHub, baik untuk repo yang bersifat publik maupun bersifat privat. Jika ingin menggunakan repo yang bersifat privat (hanya bisa diakses oleh pemakai GitHub yang dikehendaki), maka kita harus membayar.
+Sebagai pengguna Git dan GitHub, kita bisa mempunyai *repository* (sering disingkat dengan *repo* saja) di GitHub, baik untuk repo yang bersifat publik maupun bersifat privat. Pamakai GitHub bisa memilih akan menggunakan publik (semua orang - bahkan yang tidak mempunyai akun GitHub - bisa melihat) atau privat jika ingin membuat repo tersebut hanya bisa diakses oleh user yang bersangkutan atau orang-orang lain yang diberi akses.
 
 Suatu repo dimaksudkan untuk menyimpan aset digital (dokumen, *source code*, gambar, dan lain-lain). Setiap satu repo biasanya digunakan untuk satu kepentingan tertentu. Repo yang ada di GitHub ini juga ada di komputer lokal pengguna. Dengan demikian, untuk setiap repo, kita mempunyai tempat penyimpanan di GitHub maupun di komputer lokal dan keduanya tersinkronisasi. Pemakai biasanya melakukan berbagai manipulasi di komputer lokal, setelah itu mengirimkan hasilnya ke repo GitHub. Proses ini disebut dengan proses **push**. 
 

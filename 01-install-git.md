@@ -1,6 +1,6 @@
 # Instalasi Git
 
-[ [<< Kembali](README.md) ]
+[ [Kembali](README.md) ]
 
 Bagian ini merupakan seri tulisan tentang [Git](https://git-scm.com/). Silahkan ke [README.md](README.md) untuk memahami gambaran garis besar materi-materi yang dituliskan.
 
@@ -8,7 +8,7 @@ Git tersedia untuk berbagai sistem operasi. *Precompiled binaries* bisa diperole
 
 ```
 $ git --version
-git version 2.19.2
+git version 2.30.1
 ```
 
 Jika muncul versi (tergantung versi yang terinstall), maka kita bisa mulai menggunakan Git.

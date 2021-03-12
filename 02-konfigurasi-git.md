@@ -1,6 +1,6 @@
 # Konfigurasi Git
 
-[ [<< Kembali](README.md) ]
+[ [Kembali](README.md) ]
 
 Bagian ini merupakan seri tulisan tentang [Git](https://git-scm.com/). Silahkan ke [README.md](README.md) untuk memahami gambaran garis besar materi-materi yang dituliskan.
 
@@ -22,4 +22,3 @@ $
 ```
 
 Langkah ini cukup dilakukan sekali saja, kecuali jika ingin melakukan perubahan nama dan email.
-

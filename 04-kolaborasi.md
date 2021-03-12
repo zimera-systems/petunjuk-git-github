@@ -1,6 +1,6 @@
 # Git untuk Kolaborasi
 
-[ [<< Kembali](README.md) ]
+[ [Kembali](README.md) ]
 
 Bagian ini merupakan seri tulisan tentang [Git](https://git-scm.com/). Silahkan ke [README.md](README.md) untuk memahami gambaran garis besar materi-materi yang dituliskan.
 
@@ -103,8 +103,8 @@ Setiap kali melakukan perubahan, kirim perubahan tersebut. Pengiriman ini disebu
 2. Commit
 3. Push ke repo kontributor
 4. Kirimkan PR ke repo *upstream author*.
-5. *Upstream author* me-*review* dan kemudian menyetujui (*merge*) ke master atau menolak PR.
-6. Jika disetujui dan di-*merge* ke repo master dari *upstream author*, sinkronkan repo di komputer lokal dan repo GitHub kontributor.
+5. *Upstream author* me-*review* dan kemudian menyetujui (*merge*) ke main atau menolak PR.
+6. Jika disetujui dan di-*merge* ke repo main dari *upstream author*, sinkronkan repo di komputer lokal dan repo GitHub kontributor.
 
 Berikut ini adalah contoh pengiriman perubahan isi README.md dengan menambahkan kontributor.
 
@@ -120,7 +120,7 @@ Sebelum melakukan perubahan, pastikan:
 $ cd playground-1
 $ git fetch upstream
 From https://github.com/oldstager/playground
- * [new branch]      master     -> upstream/master
+ * [new branch]      main -> upstream/main
 $
 ```
 
@@ -143,7 +143,7 @@ $ git checkout -b add-contributor
 Switched to a new branch 'add-contributor'
 $ git branch
 * add-contributor
-  master
+  main
 $ vim README.md
 $ cat README.md 
 # Playground
@@ -167,9 +167,9 @@ $ git add -A
 $ git commit -m "Add: contributor"
 [add-contributor 22d9c0b] Add: contributor
  1 file changed, 4 insertions(+)
-$ git checkout master
-Switched to branch 'master'
-Your branch is up to date with 'origin/master'.
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
 $ git push origin add-contributor 
 Username for 'https://github.com': bpdp
 Password for 'https://bpdp@github.com': 
@@ -192,45 +192,45 @@ $
 
 ![Hasil push ke repo kontributor](images/04/04-01-pr-1.png)
 
-6. Pilih ```Compare and pull request```, kemudian isikan deskripsi PR dan klik pada ```Create pull request```:
+6. Pilih `Compare and pull request`, kemudian isikan deskripsi PR dan klik pada `Create pull request`:
 
 ![Hasil PR](images/04/04-01-pr-2.png)
 
-7. Pada repo *upstream author*, muncul angka 1 (artinya jumlahnya 1) pada ```Pull requests``` di bagian atas.
-8. *Upstream author* bisa menyetujui setelah melakukan review: klik pada ```Pull requests```, akan muncul PR dengan message seperti yang ditulis oleh kontributor (*Add: contributor*). Klik pada PR tersebut, review kemudian klik ```Merge pull request``` diikuti dengan ```Confirm merge```. Setelah itu, status akan berubah menjadi ```Merged```.
+7. Pada repo *upstream author*, muncul angka 1 (artinya jumlahnya 1) pada `Pull requests` di bagian atas.
+8. *Upstream author* bisa menyetujui setelah melakukan review: klik pada `Pull requests`, akan muncul PR dengan message seperti yang ditulis oleh kontributor (*Add: contributor*). Klik pada PR tersebut, review kemudian klik `Merge pull request` diikuti dengan `Confirm merge`. Setelah itu, status akan berubah menjadi `Merged`.
 9. Sinkronkan semua repo (lokal maupun GitHub kontributor)
 
 ```bash
-$ git checkout master
-Switched to branch 'master'
-Your branch is up to date with 'origin/master'.
+$ git checkout main 
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
 $ git branch
   add-contributor
-* master
+* main
 $ git fetch upstream
 remote: Enumerating objects: 1, done.
 remote: Counting objects: 100% (1/1), done.
 remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
 Unpacking objects: 100% (1/1), done.
 From https://github.com/oldstager/playground
-   765eda2..b7183be  master     -> upstream/master
+   765eda2..b7183be  main -> upstream/main
 $ cat README.md 
 # Playground
 
 It's just an example repo so that people can use it to learn Git.
 
-$ git merge upstream/master
+$ git merge upstream/main
 Updating 765eda2..b7183be
 Fast-forward
  README.md | 4 ++++
  1 file changed, 4 insertions(+)
 zaky@dellvuan:~/playground-1$ git status
-On branch master
-Your branch is ahead of 'origin/master' by 2 commits.
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
   (use "git push" to publish your local commits)
 
 nothing to commit, working tree clean
-$ git push origin master
+$ git push origin main
 Username for 'https://github.com': bpdp
 Password for 'https://bpdp@github.com': 
 Enumerating objects: 1, done.
@@ -238,7 +238,7 @@ Counting objects: 100% (1/1), done.
 Writing objects: 100% (1/1), 661 bytes | 661.00 KiB/s, done.
 Total 1 (delta 0), reused 0 (delta 0)
 To https://github.com/bpdp/playground-1
-   765eda2..b7183be  master -> master
+   765eda2..b7183be  main-> main
 $ cat README.md 
 # Playground
 

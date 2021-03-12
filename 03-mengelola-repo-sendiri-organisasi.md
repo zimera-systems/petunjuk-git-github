@@ -1,6 +1,6 @@
 # Mengelola Repo Sendiri di Organisasi
 
-[ [<< Kembali](README.md) ]
+[ [Kembali](README.md) ]
 
 Bagian ini merupakan seri tulisan tentang [Git](https://git-scm.com/). Silahkan ke [README.md](README.md) untuk memahami gambaran garis besar materi-materi yang dituliskan.
 
@@ -9,5 +9,3 @@ Repo yang dibuat bisa diletakkan pada account kita maupun berada pada suatu orga
 ![Membuat repo di organisasi](images/03/03-01-new-repo-org.png)
 
 Operasi-operasi lainnya sama saja dengan pembahasan sebelumnya.
-
-
