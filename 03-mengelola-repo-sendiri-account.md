@@ -70,6 +70,18 @@ Perubahan isi bisa terjadi karena satu atau kombinasi beberapa hal berikut:
 
 Untuk kasus-kasus tersebut, lakukan perubahan di komputer lokal, setelah itu push ke repo. 
 
+> **Catatan Penting**
+> Untuk operasi edit file di repo ini, digunakan **vim**. Vim adalah editor teks yang biasanya 
+> di-install secara default di Linux / BSD, tetapi tidak di Windows. Untuk mengikuti materi di repo ini,
+> anda tidak harus menggunakan Vim tetapi bisa menggunakan editor teks lain yang menghasilkan file
+> ASCII murni / file teks biasa. Contoh, jika anda menggunakan Windows adalah TextPad, NotePad++.
+> dan lain-lain
+>
+> **cat** merupakan perintah di Linux untuk melihat isi dari suatu file. Jika di Windows, bisa menggunakan
+> perintah **type namafile**. Penggunaan **cat** disini hanya untuk menunjukkan isi dari file, sehingga 
+> anda mempunyai panduan isi dari file. Gunakan editor teks anda sendiri untuk membuat isi file tersebut.
+
+
 ```bash
 $ vim README.md
 $ cat README.md
