@@ -4,6 +4,10 @@
 
 Bagian ini merupakan seri tulisan tentang [Git](https://git-scm.com/). Silahkan ke [README.md](README.md) untuk memahami gambaran garis besar materi-materi yang dituliskan.
 
+## *Personal Access Token*
+
+Pada [bulan Juli 2020](https://github.blog/2020-07-30-token-authentication-requirements-for-api-and-git-operations/), GitHub mengumumkan tentang penggunaan *token-based authentication*. Mulai 13 Agustus 2021, penggunaan token merupakan [kewajiban untuk semua akses ke GitHub yang memerlukan otentikasi](https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/), sehingga para pengguna GitHub **wajib** mengaktifkan *personal access token*. Materi GitHub yang ada pada keseluruhan materi GitHub memerlukan akses repo dari *command line* / *shell*, sehingga wajib menggunakan token. Gunakan petunjuk yang ada pada https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token untuk membuat *personal access token*.
+
 ## Langkah-langkah
 
 Setiap orang yang telah mempunyai account di GitHub bisa membuat repo. Secara umum, langkah-langkahnya adalah sebagai berikut:
